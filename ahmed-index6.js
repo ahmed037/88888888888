@@ -234,7 +234,12 @@ function displayToc(filter) {
         }
    }
    tocTable += '</table>';
-
+   if ( == postTitle.length) {
+      var tocNote = '<span class=""> ' + postTitle.length + '<br/></span>'; }
+   else {
+      var tocNote = '<span class=""> ' +  ' \'';
+      tocNote += postFilter + '\'  '+ postTitle.length + '  <br/></span>';
+   }
    tocdiv.innerHTML = tocNote + tocTable;
 } // end of displayToc
 
