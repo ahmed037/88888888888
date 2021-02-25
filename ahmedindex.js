@@ -229,7 +229,7 @@ function displayToc(filter) {
           z = postLabels[i].lastIndexOf(filter);
           if ( z!= -1) {
              tocTable += '<tr><td class="toc-entry-col1"><a href="' + postUrl[i] + '" title="' + postSum[i] + '">' + postTitle[i] + '</a></td><td class="toc-entry-col2">' + postDate[i] + '</td><td class="toc-entry-col3">' + postLabels[i] + '</td></tr>';
-             numDisplayed++;
+           ;
           }
         }
    }
