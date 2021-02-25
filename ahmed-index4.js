@@ -33,7 +33,7 @@
    var postFilter = '';             // default filter value
    var tocdiv = document.getElementById("bp_toc"); //the toc container
    var totalEntires =0; //Entries grabbed till now
-   var  =0; //Total number of posts in the blog.
+   var totalPosts =0; //Total number of posts in the blog.
 
 // main callback function
 
@@ -211,12 +211,6 @@ function displayToc(filter) {
    }
    tocTable += '<table>';
    tocTable += '<tr>';
-   tocTable += '<td class="toc-header-col1">';
-   tocTable += '<a href="javascript:toggleTitleSort();" title="' + tocTool1 + '">' + tocHead1 + '</a>';
-   tocTable += '</td>';
-   tocTable += '<td class="toc-header-col2">';
-   tocTable += '<a href="javascript:toggleDateSort();" title="' + tocTool2 + '">' + tocHead2 + '</a>';
-   tocTable += '</td>';
    tocTable += '<td class="toc-header-col3">';
    tocTable += '<a href="javascript:allPosts();" title="' + tocTool3 + '">' + tocHead3 + '</a>';
    tocTable += '</td>';
